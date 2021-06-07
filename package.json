@@ -7,12 +7,16 @@
     "gl-matrix": "^3.3.0"
   },
   "devDependencies": {
+    "@swc/cli": "^0.1.45",
+    "@swc/core": "^1.2.60",
+    "chokidar": "^3.5.1",
     "typescript": "^4.3.2"
   },
   "scripts": {
-    "start": "http-server",
+    "start": "concurrently \"npm run compile_ts\"  \"http-server\"",
     "open_browser": "start http://localhost:8080",
     "open": "concurrently \"http-server -s\"  \"start http://localhost:8080\"",
+    "compile_ts": "npx swc ./src --out-dir ./compiled_js --watch --log-watch-compilation",
     "test": "echo Hello"
   },
   "author": "",
