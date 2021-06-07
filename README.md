@@ -26,6 +26,10 @@ npm start
 
 Open your browser at localhost:8080(by default) or click the link in the terminal.
 
+## Resources
+
+https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
+
 # License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
