@@ -13,8 +13,7 @@ import "../node_modules/gl-matrix/gl-matrix.js"
   // start here
   //
   function main() {
-    const canvas = document.createElement("canvas");
-    document.body.appendChild(canvas);
+    const canvas = document.querySelector("canvas");
     // Initialize the GL context
     const gl = canvas.getContext("webgl2");
     new Renderer(gl).hello();
